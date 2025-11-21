@@ -1,9 +1,51 @@
-head {
-	color: #FF0000;
-}
 
-body {
-	font-family: courier, fixed, monospace;
-}
+  <style>
+    /* Cambia el valor de --bg-color para elegir otro color */
+    :root {
+      --bg-color: #a8d5ff; /* color de fondo (azul claro) */
+      --text-color: #0b2a4a;
+    }
 
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, "Helvetica Neue", Arial;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    .container {
+      min-height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+      box-sizing: border-box;
+    }
+
+    .card {
+      background: rgba(255,255,255,0.85);
+      border-radius: 12px;
+      padding: 1.5rem 2rem;
+      box-shadow: 0 6px 18px rgba(11,42,74,0.12);
+      max-width: 720px;
+      text-align: center;
+    }
+
+    h1 { margin: 0 0 0.5rem 0; font-size: 1.6rem; }
+    p { margin: 0; opacity: 0.9; }
+
+    /* Ejemplo: cambiar color con una clase */
+    .bg-green { --bg-color: #c8f7c5; }
+    .bg-dark { --bg-color: #22303f; --text-color: #e6f0fb; }
+
+    /* Responsive */
+    @media (max-width: 480px) {
+      .card { padding: 1rem; }
+      h1 { font-size: 1.25rem; }
+    }
+  </style>
 
